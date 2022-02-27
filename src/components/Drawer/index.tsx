@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { styled, useTheme } from '@mui/material/styles'
+
 import Box from '@mui/material/Box'
 import Drawer from '@mui/material/Drawer'
 import CssBaseline from '@mui/material/CssBaseline'
@@ -156,7 +157,7 @@ export default function PersistentDrawerLeft() {
                 </List>
 
                 <List>
-                    <Link href="/dash/about/">
+                    <Link href="/dash/profile/">
                         <ListItem>
                             <ListItemIcon>
                                 <AccountCircleIcon style={{ color: '#249DD9', cursor: 'pointer' }} />
