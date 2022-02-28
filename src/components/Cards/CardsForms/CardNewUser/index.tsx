@@ -8,9 +8,6 @@ import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import EditIcon from '@mui/icons-material/Edit';
-import Stack from '@mui/material/Stack';
-import Fab from '@mui/material/Fab';
 
 function initialState() {
     return { userName: '', user: '', password: ''}
@@ -19,9 +16,7 @@ function initialState() {
 export default function CardProfile() {
     const router = useRouter()
     const [values, setValues] = useState(initialState)
-    const [fieldState, setFields] = useState(true)
-    const [buttonColor, setButtonColor] = useState('rgba(0, 0, 0, 0.26)')
-    
+        
     function handleChange(event: any) {
         const { value, name } = event.target
         setValues({
@@ -40,12 +35,6 @@ export default function CardProfile() {
         router.push('/dash/home/')
     }
 
-    const handleEdit = async (event: any) => {
-        event.preventDefault()
-        setFields(false)
-        setButtonColor('#249DD9')
-    }
-
     return (
         <div>
             <Card>
@@ -53,13 +42,6 @@ export default function CardProfile() {
                     <Typography variant="h5" component="div" sx={{textAlign: 'center'}}>
                         Perfil
                     </Typography>
-
-                    <Stack 
-                        direction="row" spacing={2} sx={{position: 'relative', float: 'right', marginBottom: '2em'}}>
-                        <Fab color="primary" aria-label="edit">
-                            <EditIcon style={{ color: '#249DD9', cursor: 'pointer' }} onClick={handleEdit} />
-                        </Fab>
-                    </Stack>                    
                     
                     <Form>
                         <Box
@@ -83,7 +65,6 @@ export default function CardProfile() {
                                 variant="outlined" 
                                 fullWidth={true}
                                 onChange={handleChange} 
-                                disabled={fieldState}
                             />
                             <br />
                             <TextField 
@@ -95,7 +76,6 @@ export default function CardProfile() {
                                 variant="outlined" 
                                 fullWidth={true}
                                 onChange={handleChange} 
-                                disabled={fieldState}
                             />
                             <br />
                             <TextField 
@@ -106,8 +86,7 @@ export default function CardProfile() {
                                 value={values.password} 
                                 variant="outlined" 
                                 fullWidth={true}
-                                onChange={handleChange} 
-                                disabled={fieldState}
+                                onChange={handleChange}
                             />
                             <br />
                             <ContainerButton>
@@ -115,9 +94,8 @@ export default function CardProfile() {
                                     type="submit" 
                                     variant="contained" 
                                     fullWidth={true} 
-                                    style={{backgroundColor: `${buttonColor}`}}
+                                    style={{backgroundColor: '#249DD9'}}
                                     onClick={handleSubmit}
-                                    disabled={fieldState}
                                 >
                                     Salvar
                                 </Button>

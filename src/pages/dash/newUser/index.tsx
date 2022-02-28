@@ -1,24 +1,23 @@
 import React from "react";
 import styled from 'styled-components'
 
-import CardClass from "../../../components/Cards/CardClass";
+import CardNewUser from "../../../components/Cards/CardsForms/CardNewUser";
 import Footer from "../../../components/nav/Footer.tsx";
 import Header from "../../../components/nav/Header";
 
-const AddClass = () => {
+export default function NewUser() {
     return (
         <>
-           <Main>
-               <Header />
-               <CardClass />
-           </Main>
-           <Footer />
+            <Main>
+                <Header />
+                <CardNewUser />
+            </Main>
+            <Footer />
         </>
+        
     );
 }
 
 const Main = styled.div`
     margin: 2em 1em;
 `
-
-export default AddClass;

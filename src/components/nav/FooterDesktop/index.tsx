@@ -36,7 +36,7 @@ const FooterDesktop = () => {
                         <HomeIcon />
                     </Link>
                     <Link href={homeLink}>
-                        <Typography variant="h6" component="div">
+                        <Typography variant="subtitle1" component="div">
                             Home
                         </Typography>
                     </Link>
@@ -46,7 +46,7 @@ const FooterDesktop = () => {
                         <InfoIcon />
                     </Link>
                     <Link href={aboutLink}>
-                        <Typography variant="h6" component="div">
+                        <Typography variant="subtitle1" component="div">
                             Sobre
                         </Typography>
                     </Link>
@@ -56,7 +56,7 @@ const FooterDesktop = () => {
                         <PolicyIcon />
                     </Link>  
                     <Link href={termsLink}>
-                        <Typography variant="h6" component="div">
+                        <Typography variant="subtitle1" component="div">
                             Termos
                         </Typography> 
                     </Link>                                        
@@ -65,7 +65,7 @@ const FooterDesktop = () => {
                         <PublicIcon />
                     </Link>
                     <Link href={urlLink}>
-                        <Typography variant="h6" component="div">
+                        <Typography variant="subtitle1" component="div">
                             Site
                         </Typography>
                     </Link>                    
@@ -74,7 +74,7 @@ const FooterDesktop = () => {
                         <ContactsIcon />
                     </Link>
                     <Link href={contactLink}>
-                        <Typography variant="h6" component="div">
+                        <Typography variant="subtitle1" component="div">
                             Contatos
                         </Typography>
                     </Link>                    
@@ -88,7 +88,7 @@ const FooterComponentDesktop = styled.div`
     @media screen and (min-width: 481px) {
         background-color: #249dd9;
         width: 100%;
-        min-height: 30em;
+        min-height: 15em;
         max-height: 100em;
         padding: 2em;
         text-align: center;

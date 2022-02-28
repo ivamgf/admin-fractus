@@ -12,7 +12,7 @@ const contentsCards = {
     children: {
         buttons: {
             value: 'Voltar',
-            color: '#249DD9',
+            color: 'backgroundColor: #249DD9',
         },
     },
 }

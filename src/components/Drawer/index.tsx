@@ -27,7 +27,9 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import { deepOrange, deepPurple } from '@mui/material/colors';
+import { deepPurple } from '@mui/material/colors';
+import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
+
 import Link from 'next/link'
 
 /*eslint-disable */
@@ -154,7 +156,20 @@ export default function PersistentDrawerLeft() {
                             </ListItemText>
                         </ListItem>
                     </Link>
-                </List>
+                </List>                
+
+                <List>
+                    <Link href="/dash/about/">
+                        <ListItem>
+                            <ListItemIcon>
+                                <InfoIcon style={{ color: '#249DD9', cursor: 'pointer' }} />
+                            </ListItemIcon>
+                            <ListItemText style={{ color: '#249DD9', cursor: 'pointer' }}>
+                                Sobre
+                            </ListItemText>
+                        </ListItem>
+                    </Link>
+                </List>  
 
                 <List>
                     <Link href="/dash/profile/">
@@ -170,17 +185,17 @@ export default function PersistentDrawerLeft() {
                 </List>
 
                 <List>
-                    <Link href="/dash/about/">
+                    <Link href="/dash/newUser/">
                         <ListItem>
                             <ListItemIcon>
-                                <InfoIcon style={{ color: '#249DD9', cursor: 'pointer' }} />
+                                <PersonAddAltIcon style={{ color: '#249DD9', cursor: 'pointer' }} />
                             </ListItemIcon>
                             <ListItemText style={{ color: '#249DD9', cursor: 'pointer' }}>
-                                Sobre
+                                Novo Usuário
                             </ListItemText>
                         </ListItem>
                     </Link>
-                </List>                
+                </List>              
 
                 <Divider />
 

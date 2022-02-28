@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
+
 import CardProfile from "../../../components/Cards/CardsForms/CardProfile";
 import Footer from "../../../components/nav/Footer.tsx";
 import Header from "../../../components/nav/Header";

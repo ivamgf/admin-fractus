@@ -5,15 +5,13 @@ import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
-import Image from 'next/image'
-import BasicButton from '../../Buttons/BasicButton'
+import Button from '@mui/material/Button';
 
 /*eslint-disable */
 export default function BasicCard(props: any) {
     const router = useRouter()
     const content = props.content
     const buttons = props.buttons
-    const buttonColor = 'backgroundColor: "#249DD9"'
 
     const redirectHome = async () => await router.push('/dash/home/')
 
@@ -43,11 +41,13 @@ export default function BasicCard(props: any) {
                 </CardContent>
                 <hr />
                 <CardActions>
-                    <BasicButton
-                        text={buttons.value}
-                        style={buttonColor}
+                    <Button
+                        variant="contained"
                         onClick={redirectHome}
-                    />
+                        style={{backgroundColor: '#249DD9'}}
+                    >
+                    {buttons.value}     
+                    </Button>
                 </CardActions>
             </Card>
         </>

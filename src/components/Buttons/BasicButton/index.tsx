@@ -11,7 +11,7 @@ export default function BasicButtons(props: TypeButton): JSX.Element {
             <Button
                 variant="contained"
                 disabled={buttonState}
-                style={{ color }}
+                style={{ backgroundColor: '#249DD9' }}
                 onClick={props.onClick}
             >
                 {props.text}
