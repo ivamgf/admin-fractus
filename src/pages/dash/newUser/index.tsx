@@ -1,25 +1,23 @@
 import React from "react";
 import styled from 'styled-components'
 
-import CardUpload from '../../../components/Cards/CardUpload';
+import CardNewUser from "../../../components/Cards/CardsForms/CardNewUser";
 import Footer from "../../../components/nav/Footer.tsx";
 import Header from "../../../components/nav/Header";
 
-const Exercises = () => {
+export default function NewUser() {
     return (
         <>
             <Main>
                 <Header />
-                <CardUpload />
+                <CardNewUser />
             </Main>
             <Footer />
         </>
+        
     );
 }
 
 const Main = styled.div`
     margin: 2em 1em;
-    min-height: 350px;
 `
-
-export default Exercises;
