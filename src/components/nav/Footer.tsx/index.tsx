@@ -59,7 +59,7 @@ const FooterComponent = styled.div`
         display: block;
         background-color: #249dd9;
         width: 100%;
-        min-height: 30em;
+        min-height: 15em;
         max-height: 100em;
         padding: 2em;
         text-align: center;
